@@ -87,7 +87,7 @@ namespace TrilhaApiDesafio.Controllers
             _context.Tarefas.Update(tarefaBanco);
             _context.SaveChanges();
 
-            return Ok();
+            return Ok(tarefaBanco);
         }
 
         [HttpDelete("{id}")]
